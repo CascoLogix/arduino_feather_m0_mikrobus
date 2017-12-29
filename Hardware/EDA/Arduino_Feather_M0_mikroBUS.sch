@@ -53,8 +53,8 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Arduino Tau mikroBUS Develepment Board"
-Date "2017-12-26"
+Title "Arduino Feather M0 mikroBUS Develepment Board"
+Date "2017-12-29"
 Rev "1.0"
 Comp "Casco Logix, LLC"
 Comment1 ""
