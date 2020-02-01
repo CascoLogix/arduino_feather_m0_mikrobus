@@ -1877,7 +1877,7 @@
   (gr_line (start 99.06 31.75) (end 99.06 101.6) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 60.96 31.75) (end 99.06 31.75) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 60.96 31.75) (end 60.96 101.6) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Arduino\nTau\nSocket" (at 80.01 83.82) (layer F.SilkS)
+  (gr_text "Arduino\nFeather M0\nSocket" (at 80.01 83.82) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text mikroBUS (at 80.01 34.29) (layer F.SilkS)
