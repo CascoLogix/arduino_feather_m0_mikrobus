@@ -18,4 +18,5 @@
   (lib (name TI_Luminary)(type Legacy)(uri ${CASCO_LOGIX_KICAD_SYMBOL_DIR}/TI_Luminary.lib)(options "")(descr ""))
   (lib (name TI_MSP430)(type Legacy)(uri ${CASCO_LOGIX_KICAD_SYMBOL_DIR}/TI_MSP430.lib)(options "")(descr ""))
   (lib (name Transducer)(type Legacy)(uri ${CASCO_LOGIX_KICAD_SYMBOL_DIR}/Transducer.lib)(options "")(descr ""))
+  (lib (name Arduino_Feather_M0_mikroBUS-rescue)(type Legacy)(uri ${KIPRJMOD}/Arduino_Feather_M0_mikroBUS-rescue.lib)(options "")(descr ""))
 )

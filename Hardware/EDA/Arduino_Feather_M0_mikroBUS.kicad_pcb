@@ -9,7 +9,14 @@
     (nets 20)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title "Arduino Feather M0 mikroBUS Develepment Board")
+    (date 2020-02-01)
+    (rev 1.0)
+    (company "Casco Logix, LLC")
+  )
+
   (layers
     (0 F.Cu signal)
     (1 Power.Cu power)
@@ -62,7 +69,7 @@
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 60.96 101.6)
     (grid_origin 60.96 101.6)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFEFFFF)
     (pcbplotparams
       (layerselection 0x011f8_80000007)
       (usegerberextensions false)

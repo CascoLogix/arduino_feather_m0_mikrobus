@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Arduino Feather M0 mikroBUS Develepment Board"
-Date "2017-12-29"
+Date "2020-02-01"
 Rev "1.0"
 Comp "Casco Logix, LLC"
 Comment1 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector1:Molex_0475710001 J5
+L Arduino_Feather_M0_mikroBUS-rescue:Molex_0475710001-Arduino_Feather_M0_mikroBUS-rescue J5
 U 1 1 569716C9
 P 1850 5950
 F 0 "J5" H 1850 6650 60  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 1850 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Integrated_Circuits:FL127 U1
+L Arduino_Feather_M0_mikroBUS-rescue:FL127-Arduino_Feather_M0_mikroBUS-rescue U1
 U 1 1 569AB8D4
 P 8500 1550
 F 0 "U1" H 8350 1850 40  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 8500 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L terminal_block:OSTVN_1x3 TB2
+L Arduino_Feather_M0_mikroBUS-rescue:OSTVN_1x3-Arduino_Feather_M0_mikroBUS-rescue TB2
 U 1 1 569ABEE5
 P 5450 6000
 F 0 "TB2" H 5450 6200 40  0000 C CNN
@@ -48,7 +48,7 @@ F 4 "" V 5650 6000 40  0000 C CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_F_2.54MM_1R8P_ST_AU_PTH J1
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_F_2.54MM_1R8P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue J1
 U 1 1 5A42BBA1
 P 4150 1550
 F 0 "J1" H 4150 2000 40  0000 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 4150 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_F_2.54MM_1R8P_ST_AU_PTH J2
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_F_2.54MM_1R8P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue J2
 U 1 1 5A42BDDD
 P 5450 1550
 F 0 "J2" H 5450 2000 40  0000 C CNN
@@ -73,49 +73,31 @@ Text Notes 4650 1050 0    60   ~ 0
 mikroBUS\nSocket
 Text Notes 4650 2600 0    60   ~ 0
 Arduino\nFeather M0\nSocket
-Text GLabel 3250 3900 0    40   Input ~ 0
+Text GLabel 3700 3800 0    40   Input ~ 0
 VIN
-Text GLabel 3250 3800 0    40   Input ~ 0
-GND
-Text GLabel 3250 3700 0    40   Input ~ 0
-3V3
-Text GLabel 3250 3600 0    40   Input ~ 0
+Text GLabel 3700 3000 0    40   Input ~ 0
 SCL
-Text GLabel 3250 3500 0    40   Input ~ 0
+Text GLabel 3700 2900 0    40   Input ~ 0
 SDA
-Text GLabel 3250 3400 0    40   Input ~ 0
+Text GLabel 5950 3400 2    40   Input ~ 0
 SCK
-Text GLabel 3250 3300 0    40   Input ~ 0
-MISO
-Text GLabel 3250 3200 0    40   Input ~ 0
+Text GLabel 5950 3300 2    40   Input ~ 0
 MOSI
-Text GLabel 3250 3100 0    40   Input ~ 0
+Text GLabel 3700 3400 0    40   Input ~ 0
 D10
-Text GLabel 3250 3000 0    40   Input ~ 0
+Text GLabel 3700 3300 0    40   Input ~ 0
 D9
-Text GLabel 3250 2900 0    40   Input ~ 0
-D8
-Text GLabel 6150 3650 2    40   Input ~ 0
-A3
-Text GLabel 6150 3750 2    40   Input ~ 0
-A0
-Text GLabel 6050 4550 2    40   Input ~ 0
+Text GLabel 5950 2900 2    40   Input ~ 0
 GND
-Text GLabel 6150 3550 2    40   Input ~ 0
-A4
-Text GLabel 6150 3450 2    40   Input ~ 0
+Text GLabel 5950 4200 2    40   Input ~ 0
 AREF
-Text GLabel 6150 3350 2    40   Input ~ 0
+Text GLabel 5950 3100 2    40   Input ~ 0
 RXD
-Text GLabel 6150 3250 2    40   Input ~ 0
+Text GLabel 5950 3000 2    40   Input ~ 0
 TXD
-Text GLabel 6150 3150 2    40   Input ~ 0
-D2
-Text GLabel 6150 3050 2    40   Input ~ 0
-D3
-Text GLabel 6150 2950 2    40   Input ~ 0
-D4
-Text GLabel 6150 2850 2    40   Input ~ 0
+Text GLabel 3700 3200 0    40   Input ~ 0
+D6
+Text GLabel 3700 3100 0    40   Input ~ 0
 D5
 Text GLabel 3900 1900 0    40   Input ~ 0
 GND
@@ -180,39 +162,21 @@ Text Notes 5350 1850 2    60   ~ 0
 Text Notes 5350 1950 2    60   ~ 0
 GND
 Text Notes 4250 3150 0    60   ~ 0
-D10
-Text Notes 5250 3850 0    60   ~ 0
-A0
-Text Notes 4250 3750 0    60   ~ 0
-3V3
+D5
 Text Notes 4250 3850 0    60   ~ 0
-GND
+VBUS
 Text Notes 4250 3950 0    60   ~ 0
-VIN
-Text Notes 5350 3050 2    60   ~ 0
-D4
-Text Notes 5350 3150 2    60   ~ 0
-D3
-Text Notes 5350 3250 2    60   ~ 0
-D2
-Text Notes 5350 3350 2    60   ~ 0
-D1
-Text Notes 5350 3450 2    60   ~ 0
-D0
-Text Notes 5350 3550 2    60   ~ 0
+EN
+Text Notes 5350 4250 2    60   ~ 0
 AREF
-Text Notes 5350 3650 2    60   ~ 0
-A4
-Text Notes 5350 3750 2    60   ~ 0
-A3
-Text Notes 5350 3950 2    60   ~ 0
+Text Notes 5350 4150 2    60   ~ 0
 GND
 Text GLabel 1150 6250 0    40   Input ~ 0
 D10
 Text GLabel 8100 1700 0    40   Input ~ 0
 D4
 $Comp
-L power:GND #PWR01
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR01
 U 1 1 5A42ECCB
 P 8850 1750
 F 0 "#PWR01" H 8850 1500 50  0001 C CNN
@@ -222,17 +186,6 @@ F 3 "" H 8850 1750 50  0000 C CNN
 	1    8850 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5A42ED4F
-P 3300 4100
-F 0 "#PWR02" H 3300 3850 50  0001 C CNN
-F 1 "GND" H 3300 3950 50  0001 C CNN
-F 2 "" H 3300 4100 50  0000 C CNN
-F 3 "" H 3300 4100 50  0000 C CNN
-	1    3300 4100
-	1    0    0    -1  
-$EndComp
 Text GLabel 1150 6150 0    40   Input ~ 0
 MOSI
 Text GLabel 1150 5750 0    40   Input ~ 0
@@ -240,7 +193,7 @@ MISO
 Text GLabel 1150 5950 0    40   Input ~ 0
 SCK
 $Comp
-L power:GND #PWR03
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR03
 U 1 1 5A42F1AD
 P 1450 6800
 F 0 "#PWR03" H 1450 6550 50  0001 C CNN
@@ -257,7 +210,7 @@ MISO
 Text GLabel 8100 1400 0    40   Input ~ 0
 SCK
 $Comp
-L Passive:CAP C1
+L Arduino_Feather_M0_mikroBUS-rescue:CAP-Arduino_Feather_M0_mikroBUS-rescue C1
 U 1 1 5A42FC25
 P 9000 1550
 F 0 "C1" H 9060 1600 40  0000 L CNN
@@ -268,7 +221,7 @@ F 3 "" H 9000 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_M_2.54MM_1R4P_ST_AU_PTH P2
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_M_2.54MM_1R4P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue P2
 U 1 1 5A43018E
 P 4050 6200
 F 0 "P2" H 4050 6450 40  0000 C CNN
@@ -279,7 +232,7 @@ F 3 "" H 4050 6200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_M_2.54MM_1R4P_ST_AU_PTH P1
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_M_2.54MM_1R4P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue P1
 U 1 1 5A431A3A
 P 4050 5700
 F 0 "P1" H 4050 5950 40  0000 C CNN
@@ -296,7 +249,7 @@ SCL
 Text Notes 4200 5850 1    60   ~ 0
 GROVE
 $Comp
-L power:GND #PWR04
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR04
 U 1 1 5A4339FF
 P 3850 7400
 F 0 "#PWR04" H 3850 7150 50  0001 C CNN
@@ -311,7 +264,7 @@ GROVE
 Text GLabel 5000 5450 0    40   Input ~ 0
 VIN
 $Comp
-L power:GND #PWR05
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR05
 U 1 1 5A437104
 P 5250 6150
 F 0 "#PWR05" H 5250 5900 50  0001 C CNN
@@ -322,7 +275,7 @@ F 3 "" H 5250 6150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector1:SOLDER_LINK_NO LK1
+L Arduino_Feather_M0_mikroBUS-rescue:SOLDER_LINK_NO-Arduino_Feather_M0_mikroBUS-rescue LK1
 U 1 1 5A439068
 P 5300 6950
 F 0 "LK1" V 5400 6950 40  0000 C CNN
@@ -337,7 +290,7 @@ mikroBUS_RST
 Text GLabel 5100 6950 0    40   Input ~ 0
 D3
 $Comp
-L Passive:RES_Small R1
+L Arduino_Feather_M0_mikroBUS-rescue:RES_Small-Arduino_Feather_M0_mikroBUS-rescue R1
 U 1 1 5A439D87
 P 3450 5400
 F 0 "R1" H 3450 5450 40  0000 C CNN
@@ -348,7 +301,7 @@ F 3 "" H 3450 5400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Passive:RES_Small R2
+L Arduino_Feather_M0_mikroBUS-rescue:RES_Small-Arduino_Feather_M0_mikroBUS-rescue R2
 U 1 1 5A439DFA
 P 3650 5400
 F 0 "R2" H 3650 5450 40  0000 C CNN
@@ -359,7 +312,7 @@ F 3 "" H 3650 5400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L terminal_block:OSTVN_1x3 TB1
+L Arduino_Feather_M0_mikroBUS-rescue:OSTVN_1x3-Arduino_Feather_M0_mikroBUS-rescue TB1
 U 1 1 5A43AD3E
 P 5450 5550
 F 0 "TB1" H 5450 5350 40  0000 C CNN
@@ -371,7 +324,7 @@ F 4 "" V 5650 5550 40  0000 C CNN "Field4"
 	1    0    0    1   
 $EndComp
 $Comp
-L header:HEADER_M_2.54MM_1R4P_ST_AU_PTH P4
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_M_2.54MM_1R4P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue P4
 U 1 1 5A43B324
 P 4050 7200
 F 0 "P4" H 4050 7450 40  0000 C CNN
@@ -382,7 +335,7 @@ F 3 "" H 4050 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_M_2.54MM_1R4P_ST_AU_PTH P3
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_M_2.54MM_1R4P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue P3
 U 1 1 5A43B32A
 P 4050 6700
 F 0 "P3" H 4050 6950 40  0000 C CNN
@@ -397,9 +350,9 @@ I2C
 Text Notes 4200 7250 1    60   ~ 0
 I2C
 Text GLabel 9100 5550 1    40   Input ~ 0
-VIN
+VBAT
 $Comp
-L power:GND #PWR06
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR06
 U 1 1 5A43CC7D
 P 9100 5950
 F 0 "#PWR06" H 9100 5700 50  0001 C CNN
@@ -414,7 +367,7 @@ NoConn ~ 1500 5650
 NoConn ~ 1500 5475
 NoConn ~ 1500 5375
 $Comp
-L Passive:CAP C2
+L Arduino_Feather_M0_mikroBUS-rescue:CAP-Arduino_Feather_M0_mikroBUS-rescue C2
 U 1 1 5A4423EE
 P 1300 6450
 F 0 "C2" H 1150 6500 40  0000 L CNN
@@ -425,7 +378,7 @@ F 3 "" H 1300 6450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Electromechanical:FIDUCIAL M3
+L Arduino_Feather_M0_mikroBUS-rescue:FIDUCIAL-Arduino_Feather_M0_mikroBUS-rescue M3
 U 1 1 5A44603B
 P 2150 7250
 F 0 "M3" H 2150 7350 40  0000 C CNN
@@ -436,7 +389,7 @@ F 3 "" H 2150 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CascoLogixLogo:Casco_Logix_Logo G1
+L Arduino_Feather_M0_mikroBUS-rescue:Casco_Logix_Logo-Arduino_Feather_M0_mikroBUS-rescue G1
 U 1 1 5A44616C
 P 1100 7750
 F 0 "G1" H 1100 7800 40  0000 C CNN
@@ -447,7 +400,7 @@ F 3 "" H 1100 7750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Electromechanical:FIDUCIAL M2
+L Arduino_Feather_M0_mikroBUS-rescue:FIDUCIAL-Arduino_Feather_M0_mikroBUS-rescue M2
 U 1 1 5A4463E3
 P 2000 7250
 F 0 "M2" H 2000 7350 40  0000 C CNN
@@ -458,7 +411,7 @@ F 3 "" H 2000 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Electromechanical:FIDUCIAL M1
+L Arduino_Feather_M0_mikroBUS-rescue:FIDUCIAL-Arduino_Feather_M0_mikroBUS-rescue M1
 U 1 1 5A44645C
 P 1850 7250
 F 0 "M1" H 1850 7350 40  0000 C CNN
@@ -1031,7 +984,7 @@ E0 26 32 33 33 2B 64 68 80 F2 84 18 02 0B 04 82 4A 8B 50 80 02 81 A0 D2 22 14 A0
 EndData
 $EndBitmap
 $Comp
-L Mounting_Hole:MOUNTING_HOLE MH4
+L Arduino_Feather_M0_mikroBUS-rescue:MOUNTING_HOLE-Arduino_Feather_M0_mikroBUS-rescue MH4
 U 1 1 5A447D37
 P 2150 7650
 F 0 "MH4" V 2250 7650 40  0000 C CNN
@@ -1042,7 +995,7 @@ F 3 "" H 2150 7650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mounting_Hole:MOUNTING_HOLE MH3
+L Arduino_Feather_M0_mikroBUS-rescue:MOUNTING_HOLE-Arduino_Feather_M0_mikroBUS-rescue MH3
 U 1 1 5A4483FC
 P 1950 7650
 F 0 "MH3" V 2050 7650 40  0000 C CNN
@@ -1053,7 +1006,7 @@ F 3 "" H 1950 7650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mounting_Hole:MOUNTING_HOLE MH2
+L Arduino_Feather_M0_mikroBUS-rescue:MOUNTING_HOLE-Arduino_Feather_M0_mikroBUS-rescue MH2
 U 1 1 5A448478
 P 1750 7650
 F 0 "MH2" V 1850 7650 40  0000 C CNN
@@ -1064,7 +1017,7 @@ F 3 "" H 1750 7650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mounting_Hole:MOUNTING_HOLE MH1
+L Arduino_Feather_M0_mikroBUS-rescue:MOUNTING_HOLE-Arduino_Feather_M0_mikroBUS-rescue MH1
 U 1 1 5A4484F3
 P 1550 7650
 F 0 "MH1" V 1650 7650 40  0000 C CNN
@@ -1075,7 +1028,7 @@ F 3 "" H 1550 7650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR07
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR07
 U 1 1 5A448571
 P 1850 7850
 F 0 "#PWR07" H 1850 7600 50  0001 C CNN
@@ -1088,55 +1041,33 @@ $EndComp
 Text GLabel 5700 1200 2    40   Input ~ 0
 D8
 Wire Wire Line
-	3250 2900 3350 2900
+	4000 3300 3700 3300
 Wire Wire Line
-	3350 3000 3250 3000
+	3700 3400 4000 3400
 Wire Wire Line
-	3250 3100 3350 3100
+	5600 3300 5950 3300
 Wire Wire Line
-	3350 3200 3250 3200
+	5950 3200 5600 3200
 Wire Wire Line
-	3250 3300 3350 3300
+	5600 3400 5950 3400
 Wire Wire Line
-	3350 3400 3250 3400
+	4000 2900 3700 2900
 Wire Wire Line
-	3350 3500 3250 3500
+	3700 3000 4000 3000
 Wire Wire Line
-	3250 3600 3350 3600
+	3700 3800 4000 3800
 Wire Wire Line
-	3250 3700 3300 3700
+	4000 3100 3700 3100
 Wire Wire Line
-	3300 3700 3350 3700
+	3700 3200 4000 3200
 Wire Wire Line
-	3250 3800 3300 3800
+	5600 3000 5950 3000
 Wire Wire Line
-	3300 3800 3350 3800
+	5950 3100 5600 3100
 Wire Wire Line
-	3250 3900 3350 3900
+	5950 4200 5600 4200
 Wire Wire Line
-	6050 2850 6150 2850
-Wire Wire Line
-	6150 2950 6050 2950
-Wire Wire Line
-	6050 3050 6150 3050
-Wire Wire Line
-	6150 3150 6050 3150
-Wire Wire Line
-	6050 3250 6150 3250
-Wire Wire Line
-	6150 3350 6050 3350
-Wire Wire Line
-	6150 3450 6050 3450
-Wire Wire Line
-	6050 3550 6150 3550
-Wire Wire Line
-	6150 3650 6050 3650
-Wire Wire Line
-	6050 3750 6150 3750
-Wire Wire Line
-	5950 4550 6000 4550
-Wire Wire Line
-	6000 4550 6050 4550
+	5600 4100 5650 4100
 Wire Wire Line
 	3900 1200 4000 1200
 Wire Wire Line
@@ -1175,9 +1106,6 @@ Wire Wire Line
 	8800 1700 8850 1700
 Wire Wire Line
 	8850 1700 9000 1700
-Wire Wire Line
-	3300 2800 3300 3700
-Connection ~ 3300 3700
 Wire Wire Line
 	1500 5950 1150 5950
 Wire Wire Line
@@ -1417,18 +1345,18 @@ Wire Notes Line
 Wire Notes Line
 	5500 1050 5500 1100
 $Comp
-L power:+3V3 #PWR08
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR08
 U 1 1 5A444220
-P 3300 2800
-F 0 "#PWR08" H 3300 2650 50  0001 C CNN
-F 1 "+3V3" H 3300 2940 50  0000 C CNN
-F 2 "" H 3300 2800 50  0000 C CNN
-F 3 "" H 3300 2800 50  0000 C CNN
-	1    3300 2800
+P 5750 2600
+F 0 "#PWR08" H 5750 2450 50  0001 C CNN
+F 1 "+3V3" H 5750 2750 50  0000 C CNN
+F 2 "" H 5750 2600 50  0000 C CNN
+F 3 "" H 5750 2600 50  0000 C CNN
+	1    5750 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR09
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR09
 U 1 1 5A444515
 P 8850 1350
 F 0 "#PWR09" H 8850 1200 50  0001 C CNN
@@ -1439,7 +1367,7 @@ F 3 "" H 8850 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR010
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR010
 U 1 1 5A444600
 P 3250 5200
 F 0 "#PWR010" H 3250 5050 50  0001 C CNN
@@ -1450,7 +1378,7 @@ F 3 "" H 3250 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR011
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR011
 U 1 1 5A4449C3
 P 5150 5400
 F 0 "#PWR011" H 5150 5250 50  0001 C CNN
@@ -1461,7 +1389,7 @@ F 3 "" H 5150 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR012
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR012
 U 1 1 5A444A22
 P 1300 5200
 F 0 "#PWR012" H 1300 5050 50  0001 C CNN
@@ -1472,7 +1400,7 @@ F 3 "" H 1300 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR013
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR013
 U 1 1 5A444BD1
 P 9500 5550
 F 0 "#PWR013" H 9500 5400 50  0001 C CNN
@@ -1482,41 +1410,36 @@ F 3 "" H 9500 5550 50  0000 C CNN
 	1    9500 5550
 	1    0    0    -1  
 $EndComp
-Text Notes 5350 2950 2    60   ~ 0
-D5
 Text Notes 4250 3050 0    60   ~ 0
-D9
+D21
 Text Notes 4250 2950 0    60   ~ 0
-D8
+D20
 Text Notes 4250 3250 0    60   ~ 0
-D11
+D6
 Text Notes 4250 3350 0    60   ~ 0
-D12
+D9
 Text Notes 4250 3450 0    60   ~ 0
-D13
-Text Notes 4250 3550 0    60   ~ 0
+D10
+Text Notes 5350 3850 2    60   ~ 0
 D16
-Text Notes 4250 3650 0    60   ~ 0
+Text Notes 5350 3750 2    60   ~ 0
 D17
-Wire Wire Line
-	3300 3800 3300 4100
-Connection ~ 3300 3800
 $Comp
-L power:GND #PWR014
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR014
 U 1 1 5A448652
-P 6000 4750
-F 0 "#PWR014" H 6000 4500 50  0001 C CNN
-F 1 "GND" H 6000 4600 50  0001 C CNN
-F 2 "" H 6000 4750 50  0000 C CNN
-F 3 "" H 6000 4750 50  0000 C CNN
-	1    6000 4750
+P 5650 4700
+F 0 "#PWR014" H 5650 4450 50  0001 C CNN
+F 1 "GND" H 5650 4550 50  0001 C CNN
+F 2 "" H 5650 4700 50  0000 C CNN
+F 3 "" H 5650 4700 50  0000 C CNN
+	1    5650 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 4750 6000 4550
-Connection ~ 6000 4550
+	5650 4700 5650 4100
+Connection ~ 5650 4100
 $Comp
-L power:GND #PWR015
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR015
 U 1 1 5A44D191
 P 9500 5950
 F 0 "#PWR015" H 9500 5700 50  0001 C CNN
@@ -1528,129 +1451,13 @@ F 3 "" H 9500 5950 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9500 5950 9500 5850
-$Comp
-L Power_Supplies:Recom_DC_DC_Conv U2
-U 1 1 5A44D83D
-P 7800 5650
-F 0 "U2" H 7600 5800 40  0000 C CNN
-F 1 "Recom_DC_DC_Conv" H 7800 5500 40  0000 C CNN
-F 2 "Power_Supply:Recom_ROE-3.305S" H 6900 7000 60  0001 C CNN
-F 3 "" H 6900 7000 60  0000 C CNN
-	1    7800 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Passive:CAP C3
-U 1 1 5A44DAF8
-P 7150 5750
-F 0 "C3" H 7210 5800 40  0000 L CNN
-F 1 "1uF" H 7210 5690 40  0000 L CNN
-F 2 "Passive:0603" H 7150 5750 60  0001 C CNN
-F 3 "" H 7150 5750 60  0000 C CNN
-	1    7150 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Passive:CAP C4
-U 1 1 5A44DB90
-P 8350 5750
-F 0 "C4" H 8410 5800 40  0000 L CNN
-F 1 "1uF" H 8410 5690 40  0000 L CNN
-F 2 "Passive:0603" H 8350 5750 60  0001 C CNN
-F 3 "" H 8350 5750 60  0000 C CNN
-	1    8350 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 5550 7150 5600
-Wire Wire Line
-	7150 5600 7150 5650
-Wire Wire Line
-	7150 5600 7450 5600
-Wire Wire Line
-	7450 5700 7400 5700
-Wire Wire Line
-	7400 5700 7400 5900
-Wire Wire Line
-	7150 5850 7150 5900
-Wire Wire Line
-	8150 5600 8350 5600
-Wire Wire Line
-	8350 5600 8400 5600
-Wire Wire Line
-	8350 5600 8350 5650
-Wire Wire Line
-	8150 5700 8200 5700
-Wire Wire Line
-	8200 5700 8200 5900
-Wire Wire Line
-	8350 5850 8350 5900
-$Comp
-L power:GND #PWR016
-U 1 1 5A44E5DF
-P 8350 5900
-F 0 "#PWR016" H 8350 5650 50  0001 C CNN
-F 1 "GND" H 8350 5750 50  0001 C CNN
-F 2 "" H 8350 5900 50  0000 C CNN
-F 3 "" H 8350 5900 50  0000 C CNN
-	1    8350 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5A44E7DA
-P 8200 5900
-F 0 "#PWR017" H 8200 5650 50  0001 C CNN
-F 1 "GND" H 8200 5750 50  0001 C CNN
-F 2 "" H 8200 5900 50  0000 C CNN
-F 3 "" H 8200 5900 50  0000 C CNN
-	1    8200 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5A44E842
-P 7400 5900
-F 0 "#PWR018" H 7400 5650 50  0001 C CNN
-F 1 "GND" H 7400 5750 50  0001 C CNN
-F 2 "" H 7400 5900 50  0000 C CNN
-F 3 "" H 7400 5900 50  0000 C CNN
-	1    7400 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5A44E8AA
-P 7150 5900
-F 0 "#PWR019" H 7150 5650 50  0001 C CNN
-F 1 "GND" H 7150 5750 50  0001 C CNN
-F 2 "" H 7150 5900 50  0000 C CNN
-F 3 "" H 7150 5900 50  0000 C CNN
-	1    7150 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR020
-U 1 1 5A44EA86
-P 7150 5550
-F 0 "#PWR020" H 7150 5400 50  0001 C CNN
-F 1 "+3V3" H 7150 5690 50  0000 C CNN
-F 2 "" H 7150 5550 50  0000 C CNN
-F 3 "" H 7150 5550 50  0000 C CNN
-	1    7150 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7150 5600
-Text GLabel 8400 5600 2    40   Input ~ 0
-5.0V
-Connection ~ 8350 5600
 Wire Wire Line
 	8850 1700 8850 1750
 Connection ~ 8850 1700
 Wire Wire Line
 	9500 5550 9500 5650
 $Comp
-L Batteries_Holders:BATTERY B1
+L Arduino_Feather_M0_mikroBUS-rescue:BATTERY-Arduino_Feather_M0_mikroBUS-rescue B1
 U 1 1 5A46C8EF
 P 9100 5750
 F 0 "B1" H 9150 5800 40  0000 L CNN
@@ -1665,7 +1472,7 @@ F 7 "Supplier P/N" H 9100 5750 60  0001 C CNN "Supplier P/N"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Batteries_Holders:BATTERY B2
+L Arduino_Feather_M0_mikroBUS-rescue:BATTERY-Arduino_Feather_M0_mikroBUS-rescue B2
 U 1 1 5A46C9B3
 P 9500 5750
 F 0 "B2" H 9550 5800 40  0000 L CNN
@@ -1680,7 +1487,7 @@ F 7 "Supplier P/N" H 9500 5750 60  0001 C CNN "Supplier P/N"
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_F_2.54MM_1R12P_ST_AU_PTH J3
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_F_2.54MM_1R12P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue J3
 U 1 1 5A46CA1B
 P 4150 3450
 F 0 "J3" H 4150 4100 40  0000 C CNN
@@ -1691,7 +1498,7 @@ F 3 "" H 4150 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header:HEADER_F_2.54MM_1R16P_ST_AU_PTH J4
+L Arduino_Feather_M0_mikroBUS-rescue:HEADER_F_2.54MM_1R16P_ST_AU_PTH-Arduino_Feather_M0_mikroBUS-rescue J4
 U 1 1 5A46CA84
 P 5450 3650
 F 0 "J4" H 5450 4500 40  0000 C CNN
@@ -1700,5 +1507,211 @@ F 2 "" H 5450 3650 60  0000 C CNN
 F 3 "" H 5450 3650 60  0000 C CNN
 	1    5450 3650
 	-1   0    0    -1  
+$EndComp
+Text Notes 5350 4450 2    60   ~ 0
+~RESET
+Text Notes 5350 4350 2    60   ~ 0
+3V3
+Text Notes 5350 4050 2    60   ~ 0
+D14
+Text Notes 5350 3950 2    60   ~ 0
+D15
+Text Notes 5350 3650 2    60   ~ 0
+D18
+Text Notes 5350 3550 2    60   ~ 0
+D19
+Text Notes 5350 3450 2    60   ~ 0
+D24
+Text Notes 5350 2950 2    60   ~ 0
+GND
+Text Notes 5350 3350 2    60   ~ 0
+D23
+Text Notes 5350 3250 2    60   ~ 0
+D22
+Text Notes 5350 3150 2    60   ~ 0
+D0
+Text Notes 5350 3050 2    60   ~ 0
+D1
+Wire Wire Line
+	5650 4100 5650 2900
+Wire Wire Line
+	5650 2900 5600 2900
+Wire Wire Line
+	5650 2900 5950 2900
+Connection ~ 5650 2900
+Text Notes 4250 3550 0    60   ~ 0
+D11
+Text Notes 4250 3650 0    60   ~ 0
+D12
+Text Notes 4250 3750 0    60   ~ 0
+D13
+Text Notes 4250 4050 0    60   ~ 0
+VBAT
+Wire Wire Line
+	5750 2600 5750 4300
+Wire Wire Line
+	5750 4300 5600 4300
+Text GLabel 3700 4000 0    40   Input ~ 0
+VBAT
+Wire Wire Line
+	3700 4000 4000 4000
+NoConn ~ 4000 3900
+Text GLabel 3700 3500 0    40   Input ~ 0
+D11
+Wire Wire Line
+	3700 3500 4000 3500
+Text GLabel 3700 3600 0    40   Input ~ 0
+D12
+Wire Wire Line
+	3700 3600 4000 3600
+Text GLabel 3700 3700 0    40   Input ~ 0
+D13
+Wire Wire Line
+	3700 3700 4000 3700
+Text GLabel 5950 3500 2    40   Input ~ 0
+D19
+Wire Wire Line
+	5600 3500 5950 3500
+Text GLabel 5950 3200 2    40   Input ~ 0
+MISO
+Text GLabel 5950 3600 2    40   Input ~ 0
+D18
+Wire Wire Line
+	5600 3600 5950 3600
+Text GLabel 5950 3700 2    40   Input ~ 0
+D17
+Wire Wire Line
+	5600 3700 5950 3700
+Text GLabel 5950 3800 2    40   Input ~ 0
+D16
+Wire Wire Line
+	5600 3800 5950 3800
+Text GLabel 5950 3900 2    40   Input ~ 0
+D15
+Wire Wire Line
+	5600 3900 5950 3900
+Text GLabel 5950 4000 2    40   Input ~ 0
+D14
+Wire Wire Line
+	5600 4000 5950 4000
+Text GLabel 5950 4400 2    40   Input ~ 0
+RESET
+Wire Wire Line
+	5950 4400 5600 4400
+Connection ~ 8350 5600
+Text GLabel 8400 5600 2    40   Input ~ 0
+5.0V
+Connection ~ 7150 5600
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:+3V3-Arduino_Feather_M0_mikroBUS-rescue #PWR020
+U 1 1 5A44EA86
+P 7150 5550
+F 0 "#PWR020" H 7150 5400 50  0001 C CNN
+F 1 "+3V3" H 7150 5690 50  0000 C CNN
+F 2 "" H 7150 5550 50  0000 C CNN
+F 3 "" H 7150 5550 50  0000 C CNN
+	1    7150 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR019
+U 1 1 5A44E8AA
+P 7150 5900
+F 0 "#PWR019" H 7150 5650 50  0001 C CNN
+F 1 "GND" H 7150 5750 50  0001 C CNN
+F 2 "" H 7150 5900 50  0000 C CNN
+F 3 "" H 7150 5900 50  0000 C CNN
+	1    7150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR018
+U 1 1 5A44E842
+P 7400 5900
+F 0 "#PWR018" H 7400 5650 50  0001 C CNN
+F 1 "GND" H 7400 5750 50  0001 C CNN
+F 2 "" H 7400 5900 50  0000 C CNN
+F 3 "" H 7400 5900 50  0000 C CNN
+	1    7400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR017
+U 1 1 5A44E7DA
+P 8200 5900
+F 0 "#PWR017" H 8200 5650 50  0001 C CNN
+F 1 "GND" H 8200 5750 50  0001 C CNN
+F 2 "" H 8200 5900 50  0000 C CNN
+F 3 "" H 8200 5900 50  0000 C CNN
+	1    8200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:GND-Arduino_Feather_M0_mikroBUS-rescue #PWR016
+U 1 1 5A44E5DF
+P 8350 5900
+F 0 "#PWR016" H 8350 5650 50  0001 C CNN
+F 1 "GND" H 8350 5750 50  0001 C CNN
+F 2 "" H 8350 5900 50  0000 C CNN
+F 3 "" H 8350 5900 50  0000 C CNN
+	1    8350 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5850 8350 5900
+Wire Wire Line
+	8200 5700 8200 5900
+Wire Wire Line
+	8150 5700 8200 5700
+Wire Wire Line
+	8350 5600 8350 5650
+Wire Wire Line
+	8350 5600 8400 5600
+Wire Wire Line
+	8150 5600 8350 5600
+Wire Wire Line
+	7150 5850 7150 5900
+Wire Wire Line
+	7400 5700 7400 5900
+Wire Wire Line
+	7450 5700 7400 5700
+Wire Wire Line
+	7150 5600 7450 5600
+Wire Wire Line
+	7150 5600 7150 5650
+Wire Wire Line
+	7150 5550 7150 5600
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:CAP-Arduino_Feather_M0_mikroBUS-rescue C4
+U 1 1 5A44DB90
+P 8350 5750
+F 0 "C4" H 8410 5800 40  0000 L CNN
+F 1 "1uF" H 8410 5690 40  0000 L CNN
+F 2 "Passive:0603" H 8350 5750 60  0001 C CNN
+F 3 "" H 8350 5750 60  0000 C CNN
+	1    8350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:CAP-Arduino_Feather_M0_mikroBUS-rescue C3
+U 1 1 5A44DAF8
+P 7150 5750
+F 0 "C3" H 7210 5800 40  0000 L CNN
+F 1 "1uF" H 7210 5690 40  0000 L CNN
+F 2 "Passive:0603" H 7150 5750 60  0001 C CNN
+F 3 "" H 7150 5750 60  0000 C CNN
+	1    7150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Feather_M0_mikroBUS-rescue:Recom_DC_DC_Conv-Arduino_Feather_M0_mikroBUS-rescue U2
+U 1 1 5A44D83D
+P 7800 5650
+F 0 "U2" H 7600 5800 40  0000 C CNN
+F 1 "Recom_DC_DC_Conv" H 7800 5500 40  0000 C CNN
+F 2 "Power_Supply:Recom_ROE-3.305S" H 6900 7000 60  0001 C CNN
+F 3 "" H 6900 7000 60  0000 C CNN
+	1    7800 5650
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
