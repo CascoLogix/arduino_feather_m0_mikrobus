@@ -375,6 +375,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/3405 Adafruit HUZZAH32 ESP32 Feather.step"
+      (offset (xyz 25.4 1.27 8.635999999999999))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module Passive:0603 (layer F.Cu) (tedit 58A872BE) (tstamp 5E3625A1)
